@@ -16,8 +16,8 @@ local_backend: true
 media_folder: assets/uploads
 public_folder: /assets/uploads
 
-site_url: https://YOUR-SITE.netlify.app        # CHANGE: the address of the live website
-display_url: https://YOUR-SITE.netlify.app     # CHANGE: same address
+site_url: https://fridapage.netlify.app        # CHANGE: the address of the live website
+display_url: https://fridapage.netlify.app     # CHANGE: same address
 locale: en
 
 collections:
