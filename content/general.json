@@ -16,7 +16,10 @@
   "site_url": "",
   "status_text": "Accepting new clients",
   "seo_description": "Frida Page is an attorney and legal consultant advising individuals, families and businesses. Book a confidential consultation.",
-  "portrait": "",
+  "portrait": "/assets/uploads/img_20211207_175738_115.jpg",
   "email": "contact@example.com",
-  "hero_images": []
+  "hero_images": [
+    "/assets/uploads/img_20211207_175738_115.jpg",
+    "/assets/uploads/img_20211207_175738_115.jpg"
+  ]
 }
