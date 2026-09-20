@@ -1,0 +1,14 @@
+{
+  "name": "frida-page-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Single-page legal consulting portfolio with a simple admin panel",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs --serve"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Frida Page",
+  "role": "Attorney and legal consultant",
+  "tagline": "Clear, confidential legal counsel for individuals, families and businesses.",
+  "accepting_clients": true,
+  "status_text": "Accepting new clients",
+  "email": "contact@example.com",
+  "whatsapp": "0000000000",
+  "phone_display": "+00 000 000 000",
+  "location": "[City, Country]",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/",
+    "x": "https://x.com/",
+    "facebook": "https://www.facebook.com/",
+    "instagram": "https://www.instagram.com/"
+  },
+  "portrait": "",
+  "hero_images": [],
+  "seo_title": "Frida Page | Attorney and Legal Consultant",
+  "seo_description": "Frida Page is an attorney and legal consultant advising individuals, families and businesses. Book a confidential consultation.",
+  "site_url": ""
+}

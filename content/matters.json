@@ -1,0 +1,52 @@
+{
+  "heading": "Notable matters",
+  "intro": "Selected engagements that can be shared publicly, with details anonymised to protect client confidentiality.",
+  "matters": [
+    {
+      "category": "Commercial",
+      "title": "Restructuring a supply agreement",
+      "summary": "Advised a mid-sized manufacturer on renegotiating a long-term supply contract, protecting a key supplier relationship while reducing the client’s exposure.",
+      "outcome": "Revised terms agreed without litigation."
+    },
+    {
+      "category": "Property",
+      "title": "Resolving a commercial title dispute",
+      "summary": "Represented a landlord in a dispute over competing claims to commercial premises, from document review through to negotiated settlement.",
+      "outcome": "Title confirmed and matter resolved by consent."
+    },
+    {
+      "category": "Employment",
+      "title": "Workplace restructuring and compliance",
+      "summary": "Guided an employer through a restructuring exercise, updating contracts and policies and documenting each step to meet legal requirements.",
+      "outcome": "Restructuring completed with no claims filed."
+    },
+    {
+      "category": "Family and succession",
+      "title": "Estate administration and planning",
+      "summary": "Supported a family through the administration of an estate and prepared a succession plan to prevent future disputes between heirs.",
+      "outcome": "Estate settled and succession plan put in place."
+    },
+    {
+      "category": "Dispute resolution",
+      "title": "Mediated shareholder settlement",
+      "summary": "Acted for a minority shareholder in a mediation over governance and exit terms, keeping the business operating throughout.",
+      "outcome": "Exit terms agreed at mediation."
+    }
+  ],
+  "note": "These examples are illustrative summaries shared with client consent. Past outcomes do not guarantee or predict the result of any future matter.",
+  "recognition_heading": "Recognition and publications",
+  "recognition": [
+    {
+      "title": "[Award or professional recognition]",
+      "year": "[Year]"
+    },
+    {
+      "title": "[Published article or speaking engagement]",
+      "year": "[Year]"
+    },
+    {
+      "title": "[Pro bono or community legal work]",
+      "year": "[Year]"
+    }
+  ]
+}

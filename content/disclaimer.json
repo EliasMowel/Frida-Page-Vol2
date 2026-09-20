@@ -1,0 +1,30 @@
+{
+  "heading": "Legal notice and disclaimer",
+  "intro": "Please read this notice before relying on anything on this website.",
+  "items": [
+    {
+      "title": "General information only",
+      "text": "The information on this website is provided for general informational purposes and does not constitute legal advice. It should not be relied on as a substitute for advice from a qualified lawyer about your specific circumstances."
+    },
+    {
+      "title": "No attorney–client relationship",
+      "text": "Visiting this website, or sending an enquiry through it, does not create an attorney–client relationship. A relationship arises only after a written engagement has been agreed and any conflict checks have been completed."
+    },
+    {
+      "title": "Confidentiality of enquiries",
+      "text": "Please do not send confidential, privileged or time-sensitive information through this website, WhatsApp, email or social media until an engagement has been confirmed. Messages sent before that point may not be protected by legal privilege."
+    },
+    {
+      "title": "Past results",
+      "text": "Matters described on this website are anonymised and shared with client consent. Past outcomes do not guarantee or predict the outcome of any future matter."
+    },
+    {
+      "title": "Jurisdiction and advertising",
+      "text": "Legal services are offered only where permitted by applicable law and professional conduct rules. In some jurisdictions this website may be regarded as advertising."
+    },
+    {
+      "title": "Third-party links and privacy",
+      "text": "Links to social media and other external sites are provided for convenience, and their content and privacy practices are outside our control. Personal information you provide through this website will be used only to respond to your enquiry."
+    }
+  ]
+}

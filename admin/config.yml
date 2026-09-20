@@ -1,0 +1,201 @@
+# ---------------------------------------------------------------------------
+# Admin panel settings (Decap CMS)
+# Two lines below MUST be changed before going live. They are marked CHANGE.
+# ---------------------------------------------------------------------------
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY   # CHANGE: for example  jane-doe/frida-page-website
+  branch: main
+
+# Lets you try the admin panel on your own computer (see the README).
+# It is ignored on the live website.
+local_backend: true
+
+# Where uploaded photos are stored in the repository, and how the site links to them.
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+site_url: https://YOUR-SITE.netlify.app        # CHANGE: the address of the live website
+display_url: https://YOUR-SITE.netlify.app     # CHANGE: same address
+locale: en
+
+collections:
+  - name: website
+    label: Website content
+    files:
+
+      # ---------------------------------------------------------------- 1
+      - label: "1. Contact details and home page"
+        name: general
+        file: content/general.json
+        fields:
+          - {label: "Full professional name", name: name, widget: string, hint: "Shown as the main heading on the home page and in the footer."}
+          - {label: "Professional title", name: role, widget: string, hint: "Shown above her name. Example: Attorney and legal consultant"}
+          - {label: "Short introduction", name: tagline, widget: text, required: false, hint: "One or two sentences shown under her name on the home page."}
+          - {label: "Show the availability badge", name: accepting_clients, widget: boolean, default: true, hint: "Turn this off when she is not taking on new clients."}
+          - {label: "Availability badge text", name: status_text, widget: string, default: "Accepting new clients", required: false}
+          - {label: "Email address", name: email, widget: string, required: false, hint: "Visitors can email her from the website. Leave blank to hide."}
+          - label: "WhatsApp number"
+            name: whatsapp
+            widget: string
+            required: false
+            hint: "Digits only, with the country code and no plus sign, spaces or dashes. For the number +44 7700 900123, type 447700900123. Leave blank to hide the WhatsApp buttons."
+            pattern: ['^[0-9]*$', "Please use digits only, with no spaces, dashes or plus sign."]
+          - {label: "Phone number as shown on the website", name: phone_display, widget: string, required: false, hint: "How the number should look to visitors. Example: +44 7700 900123"}
+          - {label: "Office location", name: location, widget: string, required: false, hint: "Example: City, Country"}
+          - label: "Social media links"
+            name: socials
+            widget: object
+            hint: "Paste the full address of each profile. Leave a box empty to hide that link."
+            fields:
+              - {label: "LinkedIn", name: linkedin, widget: string, required: false}
+              - {label: "X (Twitter)", name: x, widget: string, required: false}
+              - {label: "Facebook", name: facebook, widget: string, required: false}
+              - {label: "Instagram", name: instagram, widget: string, required: false}
+          - {label: "Portrait photo", name: portrait, widget: image, required: false, hint: "Shown in the About section. A tall photo (4 by 5) works best. Leave empty to show her initials."}
+          - label: "Home page background photos"
+            name: hero_images
+            widget: list
+            required: false
+            max: 3
+            hint: "Optional. Up to three wide photos that fade into each other behind her name. Leave empty to use the built-in artwork."
+            field: {label: "Photo", name: photo, widget: image}
+          - {label: "Search result title", name: seo_title, widget: string, required: false, hint: "The title people see on Google and in the browser tab."}
+          - {label: "Search result description", name: seo_description, widget: text, required: false, hint: "One or two sentences that describe the website on Google."}
+          - {label: "Website address", name: site_url, widget: string, required: false, hint: "The full address of the live website, for example https://www.yourname.com. Helps search engines."}
+
+      # ---------------------------------------------------------------- 2
+      - label: "2. About her"
+        name: about
+        file: content/about.json
+        fields:
+          - {label: "Section heading", name: heading, widget: string}
+          - label: "Biography"
+            name: paragraphs
+            widget: list
+            hint: "One box per paragraph. The first paragraph is shown in larger type."
+            field: {label: "Paragraph", name: paragraph, widget: text}
+          - label: "Credentials"
+            name: facts
+            widget: list
+            required: false
+            hint: "Education, admissions, memberships, languages and so on."
+            summary: "{{fields.label}}"
+            fields:
+              - {label: "Label", name: label, widget: string, hint: "Example: Education"}
+              - {label: "Details", name: value, widget: string}
+
+      # ---------------------------------------------------------------- 3
+      - label: "3. Practice areas"
+        name: services
+        file: content/services.json
+        fields:
+          - {label: "Section heading", name: heading, widget: string}
+          - {label: "Introduction", name: intro, widget: text, required: false}
+          - label: "Legal services"
+            name: areas
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Service name", name: title, widget: string}
+              - {label: "Description", name: description, widget: text}
+          - {label: "Heading for the process steps", name: process_heading, widget: string, required: false, default: "How we work together"}
+          - label: "Process steps"
+            name: steps
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Step title", name: title, widget: string}
+              - {label: "Description", name: description, widget: text}
+
+      # ---------------------------------------------------------------- 4
+      - label: "4. Career background"
+        name: experience
+        file: content/experience.json
+        fields:
+          - {label: "Section heading", name: heading, widget: string}
+          - {label: "Introduction", name: intro, widget: text, required: false}
+          - label: "Roles"
+            name: roles
+            widget: list
+            summary: "{{fields.title}}, {{fields.organisation}}"
+            fields:
+              - {label: "Job title", name: title, widget: string}
+              - {label: "Organisation", name: organisation, widget: string, required: false}
+              - {label: "Period", name: period, widget: string, hint: "Example: 2019 to Present", required: false}
+              - {label: "Summary", name: summary, widget: text, required: false}
+              - label: "Key responsibilities"
+                name: highlights
+                widget: list
+                required: false
+                field: {label: "Responsibility", name: item, widget: string}
+
+      # ---------------------------------------------------------------- 5
+      - label: "5. Notable matters"
+        name: matters
+        file: content/matters.json
+        fields:
+          - {label: "Section heading", name: heading, widget: string}
+          - {label: "Introduction", name: intro, widget: text, required: false}
+          - label: "Matters"
+            name: matters
+            widget: list
+            hint: "Only add matters that the client has approved and that are anonymised."
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Area of law", name: category, widget: string, required: false, hint: "Example: Commercial"}
+              - {label: "Title", name: title, widget: string}
+              - {label: "What she did", name: summary, widget: text, required: false}
+              - {label: "Result", name: outcome, widget: string, required: false}
+          - {label: "Note shown under the matters", name: note, widget: text, required: false}
+          - {label: "Heading for recognition", name: recognition_heading, widget: string, required: false, default: "Recognition and publications"}
+          - label: "Recognition and publications"
+            name: recognition
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Year", name: year, widget: string, required: false}
+
+      # ---------------------------------------------------------------- 6
+      - label: "6. Contact section and enquiry form"
+        name: contact
+        file: content/contact.json
+        fields:
+          - {label: "Section heading", name: heading, widget: string}
+          - {label: "Introduction", name: intro, widget: text, required: false}
+          - {label: "Enquiry form heading", name: form_heading, widget: string}
+          - label: "Types of matter in the enquiry form"
+            name: matter_types
+            widget: list
+            hint: "The choices visitors see in the drop-down list."
+            field: {label: "Type of matter", name: type, widget: string}
+          - {label: "Note under the enquiry form", name: form_note, widget: text, required: false}
+
+      # ---------------------------------------------------------------- 7
+      - label: "7. Quote banners"
+        name: banners
+        file: content/banners.json
+        fields:
+          - {label: "Quote (between practice areas and career)", name: quote, widget: text, required: false, hint: "Leave empty to hide the banner."}
+          - {label: "Name shown under the quote", name: quote_note, widget: string, required: false}
+          - {label: "Call to action (before the contact section)", name: cta_text, widget: string, required: false, hint: "Leave empty to hide the banner."}
+
+      # ---------------------------------------------------------------- 8
+      - label: "8. Legal notice and disclaimer"
+        name: disclaimer
+        file: content/disclaimer.json
+        fields:
+          - {label: "Section heading", name: heading, widget: string}
+          - {label: "Introduction", name: intro, widget: text, required: false}
+          - label: "Notices"
+            name: items
+            widget: list
+            hint: "Have these checked against local bar or law society rules before changing them."
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Text", name: text, widget: text}

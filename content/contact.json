@@ -1,0 +1,15 @@
+{
+  "heading": "Get in touch",
+  "intro": "Choose the channel that suits you and describe your matter briefly. Frida will reply to arrange a consultation.",
+  "form_heading": "Send an enquiry",
+  "matter_types": [
+    "Corporate and commercial",
+    "Contracts and transactions",
+    "Dispute resolution",
+    "Property and real estate",
+    "Family and succession",
+    "Employment and compliance",
+    "Not sure yet"
+  ],
+  "form_note": "This opens WhatsApp or your email app with your message ready to send. Please do not include confidential details until an engagement is confirmed."
+}

@@ -1,0 +1,49 @@
+{
+  "heading": "Practice areas",
+  "intro": "Advice and representation across the legal matters that individuals, families and businesses face most often.",
+  "areas": [
+    {
+      "title": "Corporate and commercial advisory",
+      "description": "Business formation, governance, shareholder and commercial agreements, and day-to-day counsel for growing enterprises."
+    },
+    {
+      "title": "Contracts and transactions",
+      "description": "Drafting, review and negotiation of agreements that protect your position and reduce risk down the line."
+    },
+    {
+      "title": "Dispute resolution",
+      "description": "Negotiation, mediation, arbitration and litigation support, chosen to fit what you need from the outcome."
+    },
+    {
+      "title": "Property and real estate",
+      "description": "Due diligence, title checks, leases and sale or purchase agreements for owners, tenants and investors."
+    },
+    {
+      "title": "Family and succession",
+      "description": "Discreet guidance on family matters, wills, estates and succession planning."
+    },
+    {
+      "title": "Employment and compliance",
+      "description": "Employment contracts, workplace policies, regulatory compliance and internal reviews."
+    }
+  ],
+  "process_heading": "How we work together",
+  "steps": [
+    {
+      "title": "Confidential consultation",
+      "description": "You describe your situation in confidence and we agree on what matters most."
+    },
+    {
+      "title": "Assessment and strategy",
+      "description": "Your options, risks and likely outcomes are set out plainly, with a recommended course of action."
+    },
+    {
+      "title": "Action and representation",
+      "description": "Documents are drafted, negotiations are held and, where needed, your case is taken forward formally."
+    },
+    {
+      "title": "Resolution and follow-up",
+      "description": "The matter is closed carefully, with clear next steps and ongoing support if you need it."
+    }
+  ]
+}

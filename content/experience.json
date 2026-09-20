@@ -1,0 +1,41 @@
+{
+  "heading": "Career background",
+  "intro": "Experience across advisory work, transactions and dispute resolution.",
+  "roles": [
+    {
+      "period": "[Year] – Present",
+      "organisation": "Independent legal practice",
+      "title": "Principal consultant",
+      "summary": "Leads an independent consulting practice advising private clients and businesses on transactions, disputes and regulatory matters, from first consultation to resolution.",
+      "highlights": [
+        "Advises businesses on contracts, governance and compliance",
+        "Represents clients in negotiation, mediation and formal proceedings",
+        "Drafts and reviews agreements, policies and legal opinions",
+        "Provides discreet counsel on family and succession matters"
+      ]
+    },
+    {
+      "period": "[Year] – [Year]",
+      "organisation": "[Law firm name]",
+      "title": "Senior associate",
+      "summary": "Managed a broad portfolio of client matters, supervised junior colleagues and worked alongside partners on complex instructions.",
+      "highlights": [
+        "Managed matters from intake to closure",
+        "Prepared pleadings, opinions and transaction documents",
+        "Carried out legal research and due diligence",
+        "Mentored junior lawyers and pupils"
+      ]
+    },
+    {
+      "period": "[Year] – [Year]",
+      "organisation": "[Organisation name]",
+      "title": "Associate and legal officer",
+      "summary": "Built a foundation in legal practice across advisory work and litigation support.",
+      "highlights": [
+        "Assisted with case preparation, research and drafting",
+        "Attended hearings, client meetings and negotiations",
+        "Maintained case files and regulatory filings"
+      ]
+    }
+  ]
+}
