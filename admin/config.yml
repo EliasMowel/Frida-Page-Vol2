@@ -5,7 +5,7 @@
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY   # CHANGE: for example  jane-doe/frida-page-website
+  repo: EliasMowel/Frida-Page-Vol2
   branch: main
 
 # Lets you try the admin panel on your own computer (see the README).
